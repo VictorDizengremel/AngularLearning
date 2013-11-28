@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test for controller</title>
+    <script type="application/javascript" src="angular\angular.js"></script>
+    <script type="application/javascript" src="js/ControllersWithFilter.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+    <div ng-controller="FirstCtrl">
+        <input type="text" ng-model="data.message">
+        <h1>{{data.message}}</h1>
+    </div>
+
+    <div ng-controller="SecondCtrl">
+
+        <input type="text" ng-model="data.message">
+        <h1>{{data.message|reverse}}</h1>
+
+    </div>
+</div>
+
+</body>
+</html>

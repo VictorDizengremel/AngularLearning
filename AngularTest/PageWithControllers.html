@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test for controller</title>
+    <script type="application/javascript" src="angular\angular.js"></script>
+    <script type="application/javascript" src="js/monController.js"></script>
+</head>
+<body>
+    <div ng-app="">
+    <input type="text" ng-model="data.message">
+    <h1>{{data.message + " world"}}</h1>
+        <div ng-controller="FirstCtrl">
+                <input type="text" ng-model="data.message">
+                <h1>{{data.message + " world"}}</h1>
+        </div>
+
+        <div ng-controller="SecondCtrl">
+
+                <input type="text" ng-model="data.message">
+                <h1>{{data.message + " world"}}</h1>
+
+        </div>
+</div>
+
+</body>
+</html>
